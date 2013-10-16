@@ -8,6 +8,9 @@ command line.
 Here's how to run it:
 
 ```
+# first, install the prerequisites: jsom, d3, and optimist
+$ npm install
+...
 $ node index.js script.js > output.svg
 ```
 
