@@ -11,6 +11,7 @@
   "license": "BSD",
   "dependencies": {
     "jsdom": "~0.8.6",
-    "d3": "~3.3.8"
+    "d3": "~3.3.8",
+    "optimist": "~0.6.0"
   }
 }
