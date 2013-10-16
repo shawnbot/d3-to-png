@@ -27,5 +27,5 @@ module.exports = function(window, options, callback) {
       .attr("r", function(d) { return d.r; })
       .attr("fill", function(d, i) { return color(i); });
 
-  callback(null, svg.node());
+  callback(null, svg);
 };
