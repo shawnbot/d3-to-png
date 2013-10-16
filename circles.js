@@ -1,7 +1,7 @@
 module.exports = function(window, options, callback) {
   var d3 = window.d3,
       width = options.width || 400,
-      height = options.width || 500;
+      height = options.height || 500;
       count = options.count || 100,
       svg = d3.select("svg")
         .attr("width", width)
