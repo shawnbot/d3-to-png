@@ -1,0 +1,16 @@
+{
+  "name": "d3-png",
+  "version": "0.0.0",
+  "description": "ERROR: No README.md file found!",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "jsdom": "~0.8.6",
+    "d3": "~3.3.8"
+  }
+}
