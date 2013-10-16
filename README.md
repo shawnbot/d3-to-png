@@ -57,7 +57,7 @@ $ convert -background none output.svg output.png
 
 ### Automate it!
 
-The included `Makefile` automates these steps with wildcard rules for `%.svg` and `%.png`:
+The included `Makefile` automates these steps with wildcard targets for `%.svg` and `%.png`:
 
 ```sh
 # renders with circles.js
@@ -65,6 +65,8 @@ $ make circles.svg
 # converts circles.svg to circles.png
 $ make circles.png
 ```
+
+As an added bonus, `%.svg` is a prerequisite of `%.png`, so the `.svg` will be generated automatically when you make the `.png`.
 
 ### Providing options to your script
 
