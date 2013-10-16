@@ -1,8 +1,9 @@
 # d3-to-png
 
 This is not really a library or a tool so much as it is a proof of concept in
-which we use [d3.js](http://d3js.org) in conjunction with
-[node.js](http://nodejs.org) to generate SVG documents from the command line.
+which we use [d3.js](http://d3js.org) and
+[jsdom](https://github.com/tmpvar/jsdom) to generate SVG documents from the
+command line.
 
 Here's how to run it:
 
