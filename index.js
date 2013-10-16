@@ -3,7 +3,7 @@ var fs = require("fs"),
     jsdom = require("jsdom"),
     argv = require("optimist").argv,
     scripts = [
-        "http://d3js.org/d3.v3.min.js"
+        "vendor/d3.v3.min.js"
     ],
     render = require("./" + argv._[0]),
     write = sys.puts;
