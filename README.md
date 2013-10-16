@@ -33,7 +33,6 @@ and which accepts the following arguments:
 * `options` is a dictionary of command line options from
   [optimist](https://github.com/substack/node-optimist).
 * `callback` is a function to call when you're done rendering, in the form
-  `callback(error, node)`. Note that `node` here is the *DOM node*, not a d3
-  selection, which you can get by calling [selection.node()](https://github.com/mbostock/d3/wiki/Selections#wiki-node).
+  `callback(error, node)`. `node` may either by a d3 selection or a DOM node.
 
 See [circles.js](blob/master/circles.js) for an example.
