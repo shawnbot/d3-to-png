@@ -1,4 +1,4 @@
-# d3-to-png
+# d3 &rarr; png
 
 This is not really a library or a tool so much as it is a proof of concept in
 which we use [d3.js](http://d3js.org) and
