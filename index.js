@@ -10,6 +10,10 @@ var fs = require("fs"),
 
 jsdom.env("<svg></svg>", scripts, function(errors, window) {
     render(window, argv, function(error, node) {
+      // check to see if this is a d3 selection, and if so get the DOM node
+      if (node instanceof window.d3.selection) {
+        node = node.node();
+      }
       node.setAttribute("xmlns", "http://www.w3.org/2000/svg");
       write('<?xml version="1.0" standalone="yes"?>');
       write(node.outerHTML);
