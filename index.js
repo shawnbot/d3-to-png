@@ -3,7 +3,7 @@ var fs = require("fs"),
     jsdom = require("jsdom"),
     argv = require("optimist").argv,
     scripts = [
-        "vendor/d3.v3.min.js"
+        "node_modules/d3/d3.min.js"
     ],
     // I'm sure there's a much better way to do this...
     render = require(path.join(process.cwd(), argv._[0])),
