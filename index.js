@@ -1,14 +1,15 @@
-var fs = require("fs"),
-    sys = require("sys"),
+#!/usr/bin/env node
+
+var path = require("path"),
     jsdom = require("jsdom"),
     argv = require("optimist").argv,
     scripts = [
-        "vendor/d3.v3.min.js"
+        "node_modules/d3/d3.min.js"
     ],
     // I'm sure there's a much better way to do this...
-    render = require("./" + argv._[0]),
+    render = require(path.join(process.cwd(), argv._[0])),
     // just write to stdout
-    write = sys.puts;
+    write = console.log;
 
 // create a jsdom environment with an empty <svg> document
 jsdom.env("<svg></svg>", scripts, function(errors, window) {
