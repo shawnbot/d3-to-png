@@ -1,11 +1,12 @@
 var fs = require("fs"),
+    path = require("path"),
     jsdom = require("jsdom"),
     argv = require("optimist").argv,
     scripts = [
         "vendor/d3.v3.min.js"
     ],
     // I'm sure there's a much better way to do this...
-    render = require("./" + argv._[0]),
+    render = require(path.join(process.cwd(), argv._[0])),
     // just write to stdout
     write = console.log;
 
