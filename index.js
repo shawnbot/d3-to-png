@@ -1,5 +1,4 @@
 var fs = require("fs"),
-    sys = require("sys"),
     jsdom = require("jsdom"),
     argv = require("optimist").argv,
     scripts = [
@@ -8,7 +7,7 @@ var fs = require("fs"),
     // I'm sure there's a much better way to do this...
     render = require("./" + argv._[0]),
     // just write to stdout
-    write = sys.puts;
+    write = console.log;
 
 // create a jsdom environment with an empty <svg> document
 jsdom.env("<svg></svg>", scripts, function(errors, window) {
