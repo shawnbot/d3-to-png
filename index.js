@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var path = require("path"),
     jsdom = require("jsdom"),
     argv = require("optimist").argv,
