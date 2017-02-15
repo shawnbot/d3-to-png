@@ -37,7 +37,7 @@ Your `module.exports` function whould accept the following arguments:
 * `callback` is a function to call when you're done rendering, in the form
   `callback(error, node)`. `node` may either by a d3 selection or a DOM node.
 
-See [circles.js](blob/master/circles.js) for an example.
+See [circles.js](circles.js) for an example.
 
 ### 4. Run your script to create the SVG
 
